@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1447720186">
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+  <File Type="PWROPT-DCP" Name="SS_controller_pwropt.dcp"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/impl_1/impl_1.psg"/>
+  <File Type="OPT-DRC" Name="SS_controller_drc_opted.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="SS_controller_timing_summary_routed.pb"/>
+  <File Type="PA-TCL" Name="SS_controller.tcl"/>
+  <File Type="OPT-DCP" Name="SS_controller_opt.dcp"/>
+  <File Type="PWROPT-DRC" Name="SS_controller_drc_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="SS_controller_placed.dcp"/>
+  <File Type="PLACE-IO" Name="SS_controller_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="SS_controller_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="SS_controller_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="SS_controller_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="SS_controller_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="SS_controller_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="SS_controller_incremental_reuse_pre_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="SS_controller_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="SS_controller_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="SS_controller_drc_physopted.rpt"/>
+  <File Type="ROUTE-DCP" Name="SS_controller_routed.dcp"/>
+  <File Type="ROUTE-DRC" Name="SS_controller_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="SS_controller_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="SS_controller_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="SS_controller_power_summary_routed.pb"/>
+  <File Type="ROUTE-STATUS" Name="SS_controller_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="SS_controller_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="SS_controller_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="SS_controller_incremental_reuse_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="SS_controller_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="SS_controller_timing_summary_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="SS_controller.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="SS_controller_timing_summary_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="SS_controller.bit"/>
+  <File Type="BG-BIN" Name="SS_controller.bin"/>
+  <File Type="BITSTR-MSK" Name="SS_controller.msk"/>
+  <File Type="BITSTR-RBT" Name="SS_controller.rbt"/>
+  <File Type="BITSTR-NKY" Name="SS_controller.nky"/>
+  <File Type="BITSTR-BMM" Name="SS_controller_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="SS_controller.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="$PSDKDIR/SDK/SDK_Export/hw/SS_controller.sysdef"/>
+  <File Type="BG-BGN" Name="SS_controller.bgn"/>
+  <File Type="BG-DRC" Name="SS_controller.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Projetos/SevenSegmentos.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Logica-Programavel/Logica-Programavel/Aulas/Projetos/SevenSegmentos.xdc"/>
+        <Attr Name="ImportTime" Val="1447108994"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014">
+      <Desc>Vivado Implementation Defaults</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
